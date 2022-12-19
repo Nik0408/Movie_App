@@ -68,9 +68,9 @@ const Movie = () => {
             </div>
             <div className="movie__heading">Production companies</div>
             <div className="movie__production">
-                {
+            {
                     currentMovieDetail && currentMovieDetail.production_companies && currentMovieDetail.production_companies.map(company => (
-                        <>
+                        <div>
                             {
                                 company.logo_path 
                                 && 
@@ -79,7 +79,7 @@ const Movie = () => {
                                     <span>{company.name}</span>
                                 </span>
                             }
-                        </>
+                        </div>
                     ))
                 }
             </div>
